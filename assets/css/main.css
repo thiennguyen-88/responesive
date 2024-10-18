@@ -1,0 +1,37 @@
+/* responsive */
+body {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+    background-color: #dabb0b;
+}
+
+.mobile, .tablet, .pc {
+    margin: auto;
+    color: #fff;
+    font-size: 100px;
+    display: none;
+}
+
+/* mobi: width <= 740px */
+/* tablet: width >=740 and width < 1024px */
+/* pc: width >=1024 */
+/* unit em ở media không phụ thuộc vào thẻ nào. */
+@media screen and (max-width:46.1875em) {
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width:46.25em) and (max-width:63.9375em) {
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (min-width:64em) {
+    .pc {
+        display: block;
+    }
+}
